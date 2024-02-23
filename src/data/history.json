@@ -1,0 +1,34 @@
+[
+    {
+      "role": "Senior Developer",
+      "organisation": "SAP",
+      "startDate": "April, 2023",
+      "endDate": "Present",
+      "experiences": ["Integrated HR cloud solution with GRC",
+      "Optimised performance bottlenecks",
+      "Leading quality management in team of 18"],
+      "imageSrc": "history/sap.png"
+    },
+    {
+      "role": "Developer",
+      "organisation": "SAP",
+      "startDate": "April, 2019",
+      "endDate": "March, 2023",
+      "experiences": ["Designed new features in GRC Access Control",
+      "Developed app which detects anomaly and predicts possible frauds",
+      "Lead customer focus initiative to increase the customer retention"
+      ],
+      "imageSrc": "history/sap.png"
+    },
+    {
+      "role": "Developer Associate",
+      "organisation": "SAP",
+      "startDate": "Sept, 2013",
+      "endDate": "April, 2019",
+      "experiences": [
+        "Worked on GRC Access Control product",
+        "Worked on Sustanability Performance Management product"
+      ],
+      "imageSrc": "history/sap.png"
+    }
+  ]
