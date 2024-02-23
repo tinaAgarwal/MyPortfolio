@@ -7,8 +7,15 @@ import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    fetch("/api")
+    .then((res) => res.json())
+    .then((data) => { console.log(data) })
+  }, []);
+
   return (
     <div className="App">
       <NavBar />

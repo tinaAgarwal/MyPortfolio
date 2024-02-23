@@ -27,15 +27,17 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
      e.preventDefault();
      setButtonText('Sending...');
-     let response = await fetch("http://localhost:5000/contact",{
-        method: "POST",
+     let response = await fetch("/api/contact",{
+        method: 'POST',
         headers: {
-            "Content-Type" : "application/json;charset=utf-8"
+            'Content-type': 'application/json; charset=UTF-8',
         },
-        body: JSON.stringify(formDetails)
+        body: JSON.stringify(formDetails),
      });
+
      setButtonText("Send");
-     let result = response.json();
+     let result = await response.json();
+     console.log(result.code);
      setFormDetails(formInitialDetails);
      if( result.code === 200 ){
         setStatus({ success:true, message: 'Message sent successfully' })
